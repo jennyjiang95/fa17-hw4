@@ -13,6 +13,6 @@ Answer: datetime
 Answer: Cat.create(:name=> "Kira")
 
 5. How did you like this homework in comparison with the previous homeworks?
-Answer:
+Answer: I find it's a bit difficult, really long. It's challenging for me.
 
 
