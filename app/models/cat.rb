@@ -1,5 +1,5 @@
 class Cat < ApplicationRecord
-    def meow
+	 def meow
         puts "meow"
     end
 end
