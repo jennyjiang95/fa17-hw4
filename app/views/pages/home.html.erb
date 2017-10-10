@@ -24,12 +24,21 @@
 
     <% @users.each do |user| %>
     <tr>
-        <td><%= user.username %></td>
+        <td><%= user.name %></td>
         <td><%= user.email %></td>
         <td><%= user.age %></td>
     </tr>
   <% end %>
 </table>
+
+<%= form_for @user do |f| %>
+  <%= f.text_area :name %>
+  <%= f.text_area :email %>
+  <%= f.text_area :age%>
+  <%= f.submit "Create" %>
+<% end %>
+
+
 
 <h1>Todos</h1>
 <table>
@@ -44,3 +53,14 @@
     </tr>
   <% end %>
 </table>
+
+
+
+<%= form_for @todo do |f| %>
+  <%= f.text_area :tasks %>
+  <%= f.check_box :finished %>
+  <%= f.submit "Create" %>
+<% end %>
+
+
+
