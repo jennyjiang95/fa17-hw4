@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/', to: 'pages#home'
   post '/todos', to: 'pages#create'
   post '/users', to: 'pages#create_user'
+  post '/cats', to: 'pages#create_cat'
 end

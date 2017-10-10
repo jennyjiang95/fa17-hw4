@@ -5,6 +5,7 @@ class PagesController < ApplicationController
         @todos = Todo.all
         @todo = Todo.new
         @user = User.new
+        @cat = Cat.new
     end
 
     def new
@@ -24,6 +25,16 @@ class PagesController < ApplicationController
 
     end
 
+    def create_cat
+    	    Cat.create(cat_params)
+
+    	    redirect_to '/'
+
+    end
+
+		def cat_params
+			params.require(:cat).permit(:name)
+		end
 
 
 		def user_params
