@@ -7,7 +7,7 @@ Answer: when we `create` a model, we are saving it to the database. However, whe
 Answer:`Cat.save`.
 
 3. What is the default integer column that exists on every table but we did NOT define?
-Answer: order??
+Answer: order?? date. time. 
 
 4. What single line of ruby code can insert a cat with the name "Kira" in the database?
 Answer: Cat.create(:name=> "Kira")
